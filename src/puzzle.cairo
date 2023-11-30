@@ -11,6 +11,11 @@ struct Location {
     col: felt,
 }
 
+struct KeyValue {
+    key: felt,
+    value: felt,
+}
+
 func verify_valid_location(loc: Location*) {
     // Check that row is in the range 0-3.
     tempvar row = loc.row;
